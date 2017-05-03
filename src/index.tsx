@@ -1,11 +1,11 @@
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom'
-import FormControl from 'react-bootstrap/lib/FormControl';
-import InputGroup from 'react-bootstrap/lib/InputGroup';
-import Overlay from 'react-bootstrap/lib/Overlay';
-import Popover from 'react-bootstrap/lib/Popover';
-import Button from 'react-bootstrap/lib/Button';
+import * as FormControl from 'react-bootstrap/lib/FormControl';
+import * as InputGroup from 'react-bootstrap/lib/InputGroup';
+import * as Overlay from 'react-bootstrap/lib/Overlay';
+import * as Popover from 'react-bootstrap/lib/Popover';
+import * as Button from 'react-bootstrap/lib/Button';
 import * as moment from 'moment';
 import { CalendarProps, DatePickerProps, DatePickerState } from "./declarations";
 

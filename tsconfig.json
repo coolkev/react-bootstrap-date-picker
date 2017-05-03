@@ -1,13 +1,19 @@
 {
     "compilerOptions": {
-        "target": "es3",
+        "module": "commonjs",
+        "target": "es5",
+        "moduleResolution": "node",
         "noImplicitAny": false,
         "sourceMap": false,
-        "outDir": "lib/",
-        "jsx": "react"
+        "jsx": "react",
+        "outDir": "lib/"        
     },
     "include": [
-        "src/"
+        "src/"        
+    ],
+    "exclude": [
+        "node_modules/"
     ]
+
 
 }
