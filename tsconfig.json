@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es3",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "outDir": "lib/",
+        "jsx": "react"
+    },
+    "include": [
+        "src/"
+    ]
+
+}
