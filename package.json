@@ -21,6 +21,7 @@
     "react-bootstrap": "^0.30.8"
   },
   "devDependencies": {
+    "@types/prop-types": "^15.5.1",
     "@types/react": "^15.0.23",
     "assert": "^1.4.1",
     "babel": "^6.23.0",
@@ -60,6 +61,7 @@
     "regenerator": "^0.8.46",
     "regenerator-loader": "^3.1.0",
     "transform-loader": "^0.2.4",
+    "typescript": "^2.3.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
   },
@@ -81,9 +83,7 @@
   },
   "homepage": "https://github.com/pushtell/react-bootstrap-date-picker#readme",
   "dependencies": {
-    "@types/prop-types": "^15.5.1",
     "moment": "^2.18.1",
-    "prop-types": "^15.5.8",
-    "typescript": "^2.3.2"
+    "prop-types": "^15.5.8"
   }
 }
