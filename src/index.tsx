@@ -295,7 +295,7 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
 
     constructor(props, context) {
         super(props, context);
-        console.log('DatePicker constructor', props);
+        //console.log('DatePicker constructor', props);
         if (props.value && props.defaultValue) {
             throw new Error('Conflicting DatePicker properties \'value\' and \'defaultValue\'');
         }
@@ -396,7 +396,7 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
     };
 
     handleBlur = () => {
-        console.log('handleBlur', this.state.selectedDate);
+        //console.log('handleBlur', this.state.selectedDate);
 
         if (this.state.selectedDate) {
 
@@ -446,12 +446,12 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
 
         var newDate = moment(newValue);
 
-        console.log('handleInputChange', { newValue, isValid: newValue && newValue.length >= 6 && newDate.isValid() });
+        //console.log('handleInputChange', { newValue, isValid: newValue && newValue.length >= 6 && newDate.isValid() });
 
         if (newValue && newValue.length >= 6 && newDate.isValid()) {
 
             const yearLength = newDate.year().toString().length;
-            console.log('yearLength', yearLength);
+            //console.log('yearLength', yearLength);
             if (yearLength == 2 || yearLength == 4) {
 
                 this.setState({ selectedDate: newDate, displayDate: newDate.toDate(), inputValue: newValue },
@@ -475,7 +475,7 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
 
     onChangeDate = (newSelectedDate: Date) => {
         const inputValue = moment(newSelectedDate).format(this.props.dateFormat);
-        console.log('onChangeDate', { newSelectedDate, inputValue });
+        //console.log('onChangeDate', { newSelectedDate, inputValue });
         this.setState({
             inputValue: inputValue,
             selectedDate: moment(newSelectedDate),
