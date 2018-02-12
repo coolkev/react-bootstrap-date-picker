@@ -105,14 +105,14 @@ export class Calendar extends React.Component<CalendarProps, never> {
         const selectedDate = this.props.selectedDate && moment(this.props.selectedDate);
         const minDate = this.props.minDate && moment(this.props.minDate);
         const maxDate = this.props.maxDate && moment(this.props.maxDate);
-        
+
         const today = moment();
         const displayDate = this.props.displayDate ? moment(this.props.displayDate) : today;
         const year = displayDate.year();
         const month = displayDate.month();
 
         const firstDay = displayDate.clone().date(1);
-        
+
         const startingDay = this.props.weekStartsOn > 1
             ? firstDay.day() - this.props.weekStartsOn + 7
             : this.props.weekStartsOn === 1
@@ -418,6 +418,9 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
 
         }
         else {
+            if (this.props.value) {
+                this.props.onChange(null, null);
+            }
             this.setState({
                 inputFocused: false
             });
@@ -463,7 +466,7 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
         }
 
         this.setState({ selectedDate: null, inputValue: newValue });
-        
+
 
     };
 
