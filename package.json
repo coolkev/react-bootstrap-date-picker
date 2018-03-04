@@ -18,7 +18,7 @@
   },
   "peerDependencies": {
     "react": ">=0.14.0",
-    "react-bootstrap": "^0.30.8"
+    "react-bootstrap": ">=0.30.8"
   },
   "devDependencies": {
     "@types/prop-types": "^15.5.1",
@@ -84,6 +84,7 @@
   "bugs": {
     "url": "https://github.com/pushtell/react-bootstrap-date-picker/issues"
   },
+  "types": "./src/declarations.d.ts",
   "homepage": "https://github.com/pushtell/react-bootstrap-date-picker#readme",
   "dependencies": {
     "moment": "^2.18.1",

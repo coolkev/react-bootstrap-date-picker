@@ -530,6 +530,8 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
                 className: this.props.className,
                 style: this.props.style,
                 autoComplete: this.props.autoComplete,
+                name: this.props.name,
+                id: this.props.id
             })
             : <FormControl
                 onKeyDown={this.handleKeyDown}
@@ -546,6 +548,8 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
                 onBlur={this.handleBlur}
                 onChange={this.handleInputChange}
                 autoComplete={this.props.autoComplete}
+                name={this.props.name}
+                id={this.props.id}
             />;
 
         return <InputGroup
