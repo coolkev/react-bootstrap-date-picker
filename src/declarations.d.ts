@@ -16,8 +16,8 @@ declare namespace DatePicker {
     interface DatePickerProps {
         value?: string;
         defaultValue?: string;
-        minDate: string;
-        maxDate: string;
+        minDate?: string;
+        maxDate?: string;
         style?: React.CSSProperties;
         className?: string;
         autoFocus?: boolean;
