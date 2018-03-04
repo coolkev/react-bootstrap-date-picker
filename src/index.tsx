@@ -583,7 +583,7 @@ export default class extends React.Component<DatePickerProps, DatePickerState> {
                 </Popover>
             </Overlay>
             <div ref="overlayContainer" style={{ position: 'relative' }} />
-            <input ref="hiddenInput" type="hidden" id={this.props.id} name={this.props.name} value={this.state.inputValue || ''} data-formattedvalue={this.state.selectedDate ? this.state.inputValue : ''} />
+            <input ref="hiddenInput" type="hidden" value={this.state.inputValue || ''} data-formattedvalue={this.state.selectedDate ? this.state.inputValue : ''} />
             {this.props.showClearButton && !this.props.customControl && <InputGroup.Addon
                 onClick={this.props.disabled ? null : this.clear}
                 style={{ cursor: (this.state.inputValue && !this.props.disabled) ? 'pointer' : 'not-allowed' }}>
